@@ -1,0 +1,119 @@
+@charset "utf-8";
+@font-face {
+  font-family: 'Pretendard-Regular';
+  src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+body {
+  width: 100%;
+  height: 100%;
+}
+a {
+  text-decoration: none;
+  text-align: center;
+}
+.wrap {
+  width: 430px;
+  height: 100%;
+  margin: 100px auto;
+  display: flex;
+  justify-content: space-between;
+  flex-flow: column wrap;
+  position: relative;
+}
+.id_pw input {
+  width: 100%;
+  height: 54px;
+  padding: 0px 20px;
+  box-sizing: border-box;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+}
+input::placeholder {
+  font-family: 'Pretendard-Regular';
+  color: #999;
+  font-size: 16px;
+}
+input:last-child {
+  margin-top: 20px;
+}
+.id_pw {
+  margin-top: 70px;
+}
+.login {
+  font-family: 'Pretendard-Regular';
+  width: 430px;
+  height: 56px;
+  text-align: center;
+  align-content: center;
+  background-color: #516559;
+  border-radius: 10px;
+  font-size: 18px;
+  font-weight: 500;
+  margin-top: 50px;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+.saveId_Find_box {
+  font-family: 'Pretendard-Regular';
+  font-weight: 400;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 10px;
+  font-size: 14px;
+  color: #505050;
+}
+.Find_id_pw_member a:not(:nth-child(3)) {
+  border-right: 1px solid #ddd;
+  padding-right: 10px;
+}
+.Find_id_pw_member {
+  display: flex;
+  gap: 10px;
+}
+.Find_id_pw_member a {
+  color: #505050;
+}
+.saveId {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+/* 체크박스 */
+.saveId input {
+  display: none;
+}
+input + label {
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+  background: url(../img/check.png) no-repeat;
+}
+input:checked + label {
+  width: 16px;
+  height: 16px;
+  background: url(../img/check2.png) no-repeat;
+}
+/* ----------------------------- */
+.end {
+  font-size: 12px;
+  color: #516559;
+  margin-top: 50px;
+  text-align: center;
+}
+.icons {
+  display: flex;
+  gap: 40px;
+  margin-top: 50px;
+  justify-content: center;
+}
+.Copyright {
+  font-size: 10px;
+  color: #516559;
+  margin-top: 200px;
+  text-align: center;
+}

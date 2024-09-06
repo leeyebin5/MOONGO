@@ -1,0 +1,259 @@
+main {
+  height: 110vh;
+}
+.main_text {
+  width: 1440px;
+  height: auto;
+  margin: 0 auto;
+  padding-top: 283px;
+}
+h2 {
+  font-size: 40px;
+  font-weight: 600;
+  position: relative;
+}
+section {
+  padding-top: 50px;
+  width: 1440px;
+  height: fit-content;
+  margin: 0 auto;
+}
+.content1 {
+  width: 770px;
+}
+.select_wrap {
+  display: flex;
+  align-items: center;
+  float: left;
+  border-bottom: 1px solid #dddd;
+  padding-bottom: 20px;
+  width: 100%;
+}
+.select_wrap label {
+  color: #999;
+}
+/* 전체선택 */
+#chk {
+  display: none;
+}
+#chk + label {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+  background: url(../../img/check.png) no-repeat;
+  position: relative;
+  top: 2px;
+}
+#chk:checked + label {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  background: url(../../img/check2.png) no-repeat;
+  position: relative;
+  top: 2px;
+}
+/* 선택 */
+#chk1 {
+  display: none;
+}
+#chk1 + label {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+  background: url(../../img/check.png) no-repeat;
+  position: relative;
+  top: 2px;
+}
+#chk1:checked + label {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  background: url(../../img/check2.png) no-repeat;
+  position: relative;
+  top: 2px;
+}
+/* 선택삭제 */
+.select_delete {
+  font-family: 'Pretendard-Regular';
+  border: none;
+  background: none;
+  font-size: 16px;
+  font-weight: 400;
+  color: #505050;
+  cursor: pointer;
+  position: absolute;
+  left: 49%;
+}
+/* 장바구니 리스트 */
+.cart_list {
+  display: flex;
+  position: absolute;
+  top: 41vh;
+  border-bottom: 1px solid #ddd;
+  width: 770px;
+  padding-bottom: 32px;
+}
+.book {
+  position: relative;
+  left: 28px;
+}
+/* 책 정보 */
+.txt_wrap {
+  position: absolute;
+  left: 30%;
+}
+.txt1 {
+  font-size: 20px;
+  font-weight: 500;
+}
+.txt2 {
+  margin-top: 18px;
+  font-size: 20px;
+  font-weight: 500;
+  color: #000;
+  margin-bottom: 18px;
+}
+.discount_rate {
+  color: #de3535;
+}
+/* 삭제 */
+.delete {
+  position: absolute;
+  width: 22px;
+  height: 22px;
+  cursor: pointer;
+  right: 4px;
+}
+/* 오른쪽 컨텐츠 */
+.content2 {
+  width: 1440px;
+  margin: 0 auto;
+  position: relative;
+}
+.step {
+  float: right;
+  display: flex;
+  gap: 16px;
+}
+.step2 {
+  color: #999;
+}
+#container2 {
+  width: 510px;
+  height: fit-content;
+  background-color: #fff;
+  border: 2px solid #eee;
+  padding: 60px 50px 60px 50px;
+  position: absolute;
+  right: 0;
+  top: 4vh;
+  border-radius: 10px;
+}
+h3 {
+  font-size: 30px;
+  font-weight: 700;
+}
+h4 {
+  font-size: 24px;
+  font-weight: 400;
+  color: #999;
+}
+#container2 p:not(.bold) {
+  font-size: 24px;
+  font-weight: 500;
+}
+.bold {
+  font-size: 24px;
+  font-weight: 700;
+  color: #516559;
+}
+.txt_wrap2,
+.txt_wrap3,
+.txt_wrap4,
+.txt_wrap5 {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 40px;
+}
+.txt_wrap4 {
+  align-items: center;
+}
+.coupon {
+  font-family: 'Pretendard-Regular';
+  color: #fff;
+  font-size: 20px;
+  border: none;
+  background-color: #516559;
+  padding: 14px 14px;
+  border-radius: 10px;
+  font-weight: 500;
+}
+.order {
+  display: block;
+  font-size: 24px;
+  font-weight: 700;
+  color: #fff;
+  background-color: #516559;
+  width: 510px;
+  height: 74px;
+  text-align: center;
+  align-content: center;
+  position: absolute;
+  right: 0;
+  border-radius: 10px;
+  top: 48vh;
+}
+/* footer {
+    position: absolute;
+    bottom: -50vh;
+} */
+#message {
+  display: none;
+  align-content: center;
+  text-align: center;
+  position: absolute;
+  top: 30vw;
+  left: 26vw;
+}
+#message p {
+  margin-top: 20px;
+}
+/* 수량조절 버튼 숨기기 */
+input[type='number']::-webkit-inner-spin-button,
+input[type='number']::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+/* 인풋 넘버 꾸미기 */
+.quantity_wrapper {
+  display: flex;
+  align-items: center;
+}
+.quantity_btn1 {
+  background-color: #eee;
+  border: 1px solid #ccc;
+  border-radius: 100%;
+  padding: 5px 10px;
+  cursor: pointer;
+  color: #999;
+}
+.quantity_btn2 {
+  background-color: #ffffff;
+  border: 1px solid #ccc;
+  border-radius: 100%;
+  padding: 5px 10px;
+  cursor: pointer;
+  color: #999;
+}
+.quantity_btn:focus {
+  outline: none;
+}
+input[type='number'] {
+  font-family: 'Pretendard-Regular';
+  font-size: 20px;
+  width: 40px;
+  text-align: center;
+  border: none;
+}

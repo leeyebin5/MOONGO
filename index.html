@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MOONGO</title>
+    <!-- css -->
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/responsive/index.css" />
+    <!-- 슬릭슬라이더 -->
+    <link rel="stylesheet" type="text/css" href="./css/slick.css" />
+    <link rel="stylesheet" type="text/css" href="./css/slick-theme.css" />
+    <!-- 공통 -->
+    <link rel="icon" href="./img/favicon-16x16.png" />
+  </head>
+  <body>
+    <div id="wrap">
+      <header>
+        <!-- 로고 -->
+        <div id="logo_search">
+          <h1>
+            <a href="/"><img src="./img/logo.png" alt="문고" /></a>
+          </h1>
+          <!-- 검색창 -->
+          <form action="#" method="post">
+            <div class="search">
+              <input type="search" name="search" id="search" placeholder="책 선택은 문고" autofocus />
+              <button type="submit">검색</button>
+            </div>
+          </form>
+        </div>
+        <!-- 왼쪽 메뉴 -->
+        <nav id="menu">
+          <ul class="left_menu">
+            <li>
+              <button type="button" onclick="menuClick()"></button>
+              <!-- 서브메뉴 -->
+              <div id="container" class="container">
+                <ul class="right_menu_Responsive">
+                  <li><a href="./sub/login.html">로그인</a></li>
+                  <li><a href="./sub/select.html">찜</a></li>
+                  <li><a href="./sub/shopping_cart.html">장바구니</a></li>
+                  <li><a href="./sub/mypage.html">마이페이지</a></li>
+                </ul>
+                <div class="book_type_wrap">
+                  <div class="book_type">
+                    <a href="#"
+                      ><span>국내도서</span>
+                      <button class="domestic_books"></button>
+                    </a>
+                    <a href="#"
+                      ><span class="foreign_books">외국도서</span>
+                      <div class="foreign_books"></div>
+                    </a>
+                  </div>
+                  <div class="book_type2">
+                    <ul>
+                      <a href="#">문학</a>
+                      <div class="li_wrap1">
+                        <li><a href="#">소설</a></li>
+                        <li><a href="#">시/에세이</a></li>
+                        <li><a href="#">만화</a></li>
+                      </div>
+                    </ul>
+                    <ul>
+                      <a href="#">인문사회</a>
+                      <div class="li_wrap2">
+                        <li><a href="#">인문</a></li>
+                        <li><a href="#">정치/사회</a></li>
+                        <li><a href="#">역사</a></li>
+                        <li><a href="#">문화</a></li>
+                        <li><a href="#">종교</a></li>
+                        <li><a href="#">예술</a></li>
+                        <li><a href="#">대중문화</a></li>
+                      </div>
+                    </ul>
+                    <ul>
+                      <a href="#">실용</a>
+                      <div class="li_wrap3">
+                        <li><a href="#">가정/육아</a></li>
+                        <li><a href="#">요리</a></li>
+                        <li><a href="#">건강</a></li>
+                        <li><a href="#">취미</a></li>
+                        <li><a href="#">실용</a></li>
+                        <li><a href="#">스포츠</a></li>
+                        <li><a href="#">자기계발</a></li>
+                        <li><a href="#">경제경영</a></li>
+                      </div>
+                    </ul>
+                    <ul>
+                      <a href="#">학습자료</a>
+                      <div class="li_wrap4">
+                        <li><a href="#">중고등 참고서</a></li>
+                        <li><a href="#">초등 참고서</a></li>
+                        <li><a href="#">유아</a></li>
+                        <li><a href="#">어린이</a></li>
+                        <li><a href="#">청소년</a></li>
+                        <li><a href="#">대학교재</a></li>
+                      </div>
+                    </ul>
+                    <ul>
+                      <a href="#">기술 및 과학</a>
+                      <div class="li_wrap5">
+                        <li><a href="#">기술 공학</a></li>
+                        <li><a href="#">과학</a></li>
+                        <li><a href="#">외국어</a></li>
+                        <li><a href="#">컴퓨터</a></li>
+                      </div>
+                    </ul>
+                    <ul>
+                      <a href="#">취업 및 여행</a>
+                      <div class="li_wrap6">
+                        <li><a href="#">여행</a></li>
+                        <li><a href="#">취업 수험서</a></li>
+                      </div>
+                    </ul>
+                    <ul>
+                      <a href="#">기타</a>
+                      <div class="li_wrap7">
+                        <li><a href="#">잡지</a></li>
+                      </div>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <!-- 왼쪽 메뉴 -->
+            </li>
+            <li><a href="./sub/sub_rank01.html">랭킹</a></li>
+            <li><a href="./sub/sub_new.html">신간도서</a></li>
+            <li><a href="./sub/Find_work_book.html">문제집 찾기</a></li>
+            <li><a href="./sub/Find_custom_book.html">맞춤 책 찾기</a></li>
+            <li><a href="./sub/event01.html">이벤트</a></li>
+          </ul>
+          <!-- 오른쪽 메뉴 -->
+          <ul class="right_menu">
+            <li><a href="./sub/login.html">로그인</a></li>
+            <li><a href="./sub/select.html">찜</a></li>
+            <li><a href="./sub/shopping_cart.html">장바구니</a></li>
+            <li><a href="./sub/mypage.html">마이페이지</a></li>
+          </ul>
+        </nav>
+      </header>
+      <main>
+        <!-- 메인 비주얼 -->
+        <section id="main_visual" class="main_visual">
+          <div>
+            <a href="#">
+              <div class="main_box1"></div>
+              <div class="main_box2"></div>
+              <div class="main_text_wrap">
+                <p class="main_text0">EVENT</p>
+                <p class="main_text1">문고와 함께하는</p>
+                <p class="main_text2">테디유 작가 사인회</p>
+                <p class="main_text3">
+                  문고에서 " 나는 집에서 일합니다 "<br />
+                  구매하면 자동 응모!
+                </p>
+              </div>
+              <div class="main_book"></div>
+              <div class="main_book2"></div>
+            </a>
+            <button type="button" class="button1"></button>
+            <p class="paging">
+              <span class="current"></span>
+              <span>/</span>
+              <span class="page_num"></span>
+            </p>
+            <button type="button" class="button2"></button>
+          </div>
+          <!-- 메인비주얼2 -->
+          <div>
+            <a href="#">
+              <div class="main_box1_1"></div>
+              <div class="main_box2_1"></div>
+              <div class="main_text_wrap">
+                <p class="main_text0_1">NEW</p>
+                <p class="main_text1_1">이유진 작가의 신작</p>
+                <p class="main_text2_1">나도 고양이처럼 살고싶다</p>
+                <p class="main_text3_1">" 고양이처럼 살고 싶은 이야기 "</p>
+              </div>
+              <div class="main_book_1"></div>
+              <div class="main_book2_1"></div>
+            </a>
+            <button type="button" class="button1"></button>
+            <p class="paging">
+              <span class="current"></span>
+              <span>/</span>
+              <span class="page_num"></span>
+            </p>
+            <button type="button" class="button2"></button>
+          </div>
+        </section>
+        <!-- 문고에 밖에 없는 추천 기능 -->
+        <section id="function">
+          <h2><span class="Emphasize">문고</span> 에 밖에 없는 추천 기능 !</h2>
+          <!-- 왼쪽 -->
+          <div class="back_box_wrap">
+            <div class="back_box1">
+              <div class="text_wrap">
+                <h3>문제집 찾기</h3>
+                <p>개인의 수준에 맞는 문제집을 손쉽게 찾아보세요!</p>
+                <a href="./sub/Find_work_book.html"
+                  ><button type="button" class="btn_primary">
+                    <span>찾으러가기</span>
+                    <div class="arrow"></div></button
+                ></a>
+                <div class="book"></div>
+              </div>
+            </div>
+            <!-- 오른쪽 -->
+            <div class="back_box2">
+              <div class="text_wrap">
+                <h3>맞춤 책 찾기</h3>
+                <p>개인의 취향과 수준에 맞는 책을 손쉽게 찾아보세요!</p>
+                <a href="./sub/Find_custom_book.html"
+                  ><button type="button" class="btn_primary">
+                    <span>찾으러가기</span>
+                    <div class="arrow"></div></button
+                ></a>
+                <div class="book_search"></div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- NEW! 이달의 신간도서 -->
+        <section id="new_book" class="new_book">
+          <div class="section_name">
+            <h2><span class="Emphasize">NEW!</span> 이달의 신간도서</h2>
+            <div class="p_arrow2_wrap">
+              <a href="./sub/sub_new.html"
+                >신간 더보기
+                <div class="arrow2"></div
+              ></a>
+            </div>
+          </div>
+          <!-- 책들 -->
+          <div class="book_slide">
+            <div class="book_wrap1">
+              <div class="book1">
+                <img src="./img/books/book1.jpg" alt="책 이미지" />
+                <div class="overlay">
+                  <p>상위1퍼 부자되는 법칙</p>
+                  <p>노력과 혁신, 전략적 투자를 통해 재산을 쌓는 비결..</p>
+                  <a href="#"
+                    >상세보기
+                    <div class="arrow"></div
+                  ></a>
+                </div>
+              </div>
+              <div class="book2">
+                <img src="./img/books/book2.jpg" alt="책 이미지" />
+                <div class="overlay">
+                  <p>일상 속 우연이 만든 운명<br />나만의 특별한 순간</p>
+                  <p>일상 속에서 우연히 만난 상황을 통해<br />새로운 인생의 방향..</p>
+                  <a href="#"
+                    >상세보기
+                    <div class="arrow"></div
+                  ></a>
+                </div>
+              </div>
+              <div class="book3">
+                <img src="./img/books/book3.jpg" alt="책 이미지" />
+                <div class="overlay">
+                  <p>그냥 그런 날들</p>
+                  <p>일상적인 날들 속에서도 느낄 수 있는 특별한..</p>
+                  <a href="#"
+                    >상세보기
+                    <div class="arrow"></div
+                  ></a>
+                </div>
+              </div>
+              <div class="book4">
+                <img src="./img/books/book4.jpg" alt="책 이미지" />
+                <div class="overlay">
+                  <p>나답게 사는 방법</p>
+                  <p>
+                    본인만의 가치관과 목표를 중시하는 방법을<br />
+                    탐구하는 과정..
+                  </p>
+                  <a href="#"
+                    >상세보기
+                    <div class="arrow"></div
+                  ></a>
+                </div>
+              </div>
+              <div class="book5">
+                <img src="./img/books/book5.jpg" alt="책 이미지" />
+                <div class="overlay">
+                  <p>정리가 경쟁력</p>
+                  <p>물리적 공간과 마음의 정돈을 통해 일과<br />삶에서의 경쟁력을 향상..</p>
+                  <a href="#"
+                    >상세보기
+                    <div class="arrow"></div
+                  ></a>
+                </div>
+              </div>
+              <div class="book6">
+                <img src="./img/books/book6.jpg" alt="책 이미지" />
+                <div class="overlay">
+                  <p>고양이의 동네 산책</p>
+                  <p>고양이가 자신의 동네를 산책하며 다양한 사람들과<br />동물들을 통해 새로운 친구를 사귀고..</p>
+                  <a href="#"
+                    >상세보기
+                    <div class="arrow"></div
+                  ></a>
+                </div>
+              </div>
+              <div class="book7">
+                <img src="./img/books/book7.jpg" alt="책 이미지" />
+                <div class="overlay">
+                  <p>나도 고양이처럼 살고 싶다</p>
+                  <p>주인공이 고양이의 자유로움과 여유로움을 배워가며<br />새로운 삶의 방식을 찾아가는..</p>
+                  <a href="#"
+                    >상세보기
+                    <div class="arrow"></div
+                  ></a>
+                </div>
+              </div>
+              <div class="book8">
+                <img src="./img/books/book8.jpg" alt="책 이미지" />
+                <div class="overlay">
+                  <p>연간 경매</p>
+                  <p>장소와 시간을 초월하여 열리는 미스터리한 경매회의</p>
+                  <a href="#"
+                    >상세보기
+                    <div class="arrow"></div
+                  ></a>
+                </div>
+              </div>
+              <div class="book9">
+                <img src="./img/books/book9.jpg" alt="책 이미지" />
+                <div class="overlay">
+                  <p>마음의 중요성</p>
+                  <p>우리 삶의 진정한 풍요와 만족을 찾기 위해..</p>
+                  <a href="#"
+                    >상세보기
+                    <div class="arrow"></div
+                  ></a>
+                </div>
+              </div>
+              <div class="book10">
+                <img src="./img/books/book10.jpg" alt="책 이미지" />
+                <div class="overlay">
+                  <p>우주의 마음 채우기</p>
+                  <p>
+                    한 소녀가 우주에서 발견한 특별한 물건을 통해<br />
+                    자신의 마음을 탐색하고 성장해..
+                  </p>
+                  <a href="#"
+                    >상세보기
+                    <div class="arrow"></div
+                  ></a>
+                </div>
+              </div>
+            </div>
+            <div class="book_wrap2">
+              <div class="book1">
+                <img src="./img/books/book1.jpg" alt="책 이미지" />
+                <div class="overlay">
+                  <p>상위1퍼 부자되는 법칙</p>
+                  <p>노력과 혁신, 전략적 투자를 통해 재산을 쌓는 비결..</p>
+                  <a href="#"
+                    >상세보기
+                    <div class="arrow"></div
+                  ></a>
+                </div>
+              </div>
+              <div class="book2">
+                <img src="./img/books/book2.jpg" alt="책 이미지" />
+                <div class="overlay">
+                  <p>일상 속 우연이 만든 운명<br />나만의 특별한 순간</p>
+                  <p>일상 속에서 우연히 만난 상황을 통해<br />새로운 인생의 방향..</p>
+                  <a href="#"
+                    >상세보기
+                    <div class="arrow"></div
+                  ></a>
+                </div>
+              </div>
+              <div class="book3">
+                <img src="./img/books/book3.jpg" alt="책 이미지" />
+                <div class="overlay">
+                  <p>그냥 그런 날들</p>
+                  <p>일상적인 날들 속에서도 느낄 수 있는 특별한..</p>
+                  <a href="#"
+                    >상세보기
+                    <div class="arrow"></div
+                  ></a>
+                </div>
+              </div>
+              <div class="book4">
+                <img src="./img/books/book4.jpg" alt="책 이미지" />
+                <div class="overlay">
+                  <p>나답게 사는 방법</p>
+                  <p>
+                    본인만의 가치관과 목표를 중시하는 방법을<br />
+                    탐구하는 과정..
+                  </p>
+                  <a href="#"
+                    >상세보기
+                    <div class="arrow"></div
+                  ></a>
+                </div>
+              </div>
+              <div class="book5">
+                <img src="./img/books/book5.jpg" alt="책 이미지" />
+                <div class="overlay">
+                  <p>정리가 경쟁력</p>
+                  <p>물리적 공간과 마음의 정돈을 통해 일과<br />삶에서의 경쟁력을 향상..</p>
+                  <a href="#"
+                    >상세보기
+                    <div class="arrow"></div
+                  ></a>
+                </div>
+              </div>
+              <div class="book6">
+                <img src="./img/books/book6.jpg" alt="책 이미지" />
+                <div class="overlay">
+                  <p>고양이의 동네 산책</p>
+                  <p>고양이가 자신의 동네를 산책하며 다양한 사람들과<br />동물들을 통해 새로운 친구를 사귀고..</p>
+                  <a href="#"
+                    >상세보기
+                    <div class="arrow"></div
+                  ></a>
+                </div>
+              </div>
+              <div class="book7">
+                <img src="./img/books/book7.jpg" alt="책 이미지" />
+                <div class="overlay">
+                  <p>나도 고양이처럼 살고 싶다</p>
+                  <p>주인공이 고양이의 자유로움과 여유로움을 배워가며<br />새로운 삶의 방식을 찾아가는..</p>
+                  <a href="#"
+                    >상세보기
+                    <div class="arrow"></div
+                  ></a>
+                </div>
+              </div>
+              <div class="book8">
+                <img src="./img/books/book8.jpg" alt="책 이미지" />
+                <div class="overlay">
+                  <p>연간 경매</p>
+                  <p>장소와 시간을 초월하여 열리는 미스터리한 경매회의</p>
+                  <a href="#"
+                    >상세보기
+                    <div class="arrow"></div
+                  ></a>
+                </div>
+              </div>
+              <div class="book9">
+                <img src="./img/books/book9.jpg" alt="책 이미지" />
+                <div class="overlay">
+                  <p>마음의 중요성</p>
+                  <p>우리 삶의 진정한 풍요와 만족을 찾기 위해 내면의 감정과 태도..</p>
+                  <a href="#"
+                    >상세보기
+                    <div class="arrow"></div
+                  ></a>
+                </div>
+              </div>
+              <div class="book10">
+                <img src="./img/books/book10.jpg" alt="책 이미지" />
+                <div class="overlay">
+                  <p>우주의 마음 채우기</p>
+                  <p>
+                    한 소녀가 우주에서 발견한 특별한 물건을 통해<br />
+                    자신의 마음을 탐색하고 성장해..
+                  </p>
+                  <a href="#"
+                    >상세보기
+                    <div class="arrow"></div
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- 이벤트 광고 -->
+        <section id="event_Advertising">
+          <a href="#">
+            <div class="event_box">
+              <div class="event_text_wrap">
+                <p class="event_text">책을 사랑하는 당신을 위한 특별한 혜택!</p>
+                <p class="event_text2">문고 회원이라면 한 권만 주문해도 무료 배송 !</p>
+              </div>
+              <p class="truck_text">FREE</p>
+              <img class="truck_img" src="./img/truck.png" alt="트럭" />
+            </div>
+          </a>
+        </section>
+        <!-- 랭킹 top3 -->
+        <section id="ranking">
+          <div class="section_name">
+            <h2><span class="Emphasize">랭킹</span> TOP4</h2>
+            <div class="information">
+              <div class="information_icon"></div>
+              <span>1시간 전 갱신</span>
+              <div class="information_box">판매량, 조회수, 평점, 리뷰가 반영됐습니다.</div>
+            </div>
+            <div class="p_arrow2_wrap">
+              <a href="./sub/sub_rank01.html"
+                >랭킹 더보기
+                <div class="arrow2"></div
+              ></a>
+            </div>
+          </div>
+          <div class="books2">
+            <!-- 1위 -->
+            <div class="book1_wrap">
+              <a href="#" class="book11"><img src="./img/books/book1.jpg" alt="책 이미지" /></a>
+              <!-- 랭킹 정보 -->
+              <div class="book_information">
+                <div class="information_text_wrap">
+                  <p class="ranking_box">1</p>
+                  <div class="info_wrap">
+                    <a href="#"><p class="book_title">상위1퍼 부자되는 법칙</p></a>
+                    <p class="Writer_publishing_house">가나다 · 마바사</p>
+                  </div>
+                </div>
+                <div class="information_text_wrap2">
+                  <div class="info_wrap2">
+                    <div class="star_icon"></div>
+                    <p class="gpa">4.75<span class="Review_text">(12,040)</span></p>
+                  </div>
+                  <p class="sales_volume_text">126권 구매중</p>
+                </div>
+              </div>
+            </div>
+            <!-- 2위 -->
+            <div class="book2_wrap">
+              <a href="#" class="book12"><img src="./img/books/book5.jpg" alt="책 이미지" /></a>
+              <!-- 랭킹 정보 -->
+              <div class="book_information">
+                <div class="information_text_wrap">
+                  <p class="ranking_box">2</p>
+                  <div class="info_wrap">
+                    <a href="#"><p class="book_title">정리가 경쟁력</p></a>
+                    <p class="Writer_publishing_house">LALANA BOOK · 이수진</p>
+                  </div>
+                </div>
+                <div class="information_text_wrap2">
+                  <div class="info_wrap2">
+                    <div class="star_icon"></div>
+                    <p class="gpa">4.83<span class="Review_text">(9,040)</span></p>
+                  </div>
+                  <p class="sales_volume_text">106권 구매중</p>
+                </div>
+              </div>
+            </div>
+            <!-- 3위 -->
+            <div class="book3_wrap">
+              <a href="#" class="book13"><img src="./img/books/book7.jpg" alt="책 이미지" /></a>
+              <!-- 랭킹 정보 -->
+              <div class="book_information">
+                <div class="information_text_wrap">
+                  <p class="ranking_box">3</p>
+                  <div class="info_wrap">
+                    <a href="#"><p class="book_title">나도 고양이처럼 살고싶다</p></a>
+                    <p class="Writer_publishing_house">studio showde · 이유진</p>
+                  </div>
+                </div>
+                <div class="information_text_wrap2">
+                  <div class="info_wrap2">
+                    <div class="star_icon"></div>
+                    <p class="gpa">4.78<span class="Review_text">(7,180)</span></p>
+                  </div>
+                  <p class="sales_volume_text">87권 구매중</p>
+                </div>
+              </div>
+            </div>
+            <!-- 4위 -->
+            <div class="book4_wrap">
+              <a href="#" class="book14"><img src="./img/books/book6.jpg" alt="책 이미지" /></a>
+              <!-- 랭킹 정보 -->
+              <div class="book_information">
+                <div class="information_text_wrap">
+                  <p class="ranking_box">4</p>
+                  <div class="info_wrap">
+                    <a href="#"><p class="book_title">고양이의 동네 산책</p></a>
+                    <p class="Writer_publishing_house">moongo · 김민수</p>
+                  </div>
+                </div>
+                <div class="information_text_wrap2">
+                  <div class="info_wrap2">
+                    <div class="star_icon"></div>
+                    <p class="gpa">4.82<span class="Review_text">(6,990)</span></p>
+                  </div>
+                  <p class="sales_volume_text">106권 구매중</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- 이벤트 -->
+        <section id="event">
+          <div class="section_name">
+            <h2>이벤트</h2>
+            <div class="p_arrow2_wrap">
+              <a href="./sub/event01.html"
+                >이벤트 더보기
+                <div class="arrow2"></div
+              ></a>
+            </div>
+          </div>
+          <div class="event_wrap">
+            <div class="img_wrap">
+              <a href="#" class="event1"><img src="./img/evente/event1.jpg" alt="이미지" /></a>
+              <a href="#" class="event2"><img src="./img/evente/event2.jpg" alt="이미지" /></a>
+              <a href="#" class="event1"><img src="./img/evente/event2.jpg" alt="이미지" /></a>
+              <a href="#" class="event2"><img src="./img/evente/event1.jpg" alt="이미지" /></a>
+            </div>
+            <button class="event_button1"></button>
+            <button class="event_button2"></button>
+          </div>
+        </section>
+      </main>
+      <!-- 풋터 -->
+      <footer>
+        <div class="footer_inner">
+          <div class="footer_left">
+            <a href="#"><img src="./img/logo.png" alt="문고" /></a>
+            <div class="footer_info">
+              <ul>
+                <li><a href="#" target="_blank">회사소개</a></li>
+                <li><a href="#">이용약관</a></li>
+                <li><a href="#">개인정보처리방침</a></li>
+                <li><a href="#">청소년보호정책</a></li>
+                <li><a href="#">대량주문안내</a></li>
+                <li><a href="#">교환 및 환불 안내</a></li>
+              </ul>
+              <p class="copyright">Copyright &copy; 2024 moongo All Rights Reserved.</p>
+            </div>
+          </div>
+          <div class="footer_right">
+            <p>고객센터 이용안내</p>
+            <p>1588-1234</p>
+            <p>(09:30 ~ 18:00, 주말/공휴일 휴무)</p>
+            <div class="app_wrap">
+              <a href="#"><div class="instagram"></div></a>
+              <a href="#"><div class="kakaotalk"></div></a>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"
+      integrity="sha512-jGsMH83oKe9asCpkOVkBnUrDDTp8wl+adkB2D+//JtlxO4SrLoJdhbOysIFQJloQFD+C4Fl1rMsQZF76JjV0eQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="./js/slick.min.js"></script>
+    <script type="text/javascript" src="./js/slick_slide.js"></script>
+    <script src="./js/index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,366 @@
+/* 노트북 */
+@media screen and (min-width: 1440px) and (max-width: 1600px) {
+  /* 헤더 */
+  #logo_search {
+    width: 1300px;
+  }
+  #menu {
+    width: 1300px;
+  }
+  .main_text {
+    width: 1300px;
+  }
+  /* 섹션 */
+  section {
+    width: 1300px;
+  }
+  .Renewal_box {
+    right: 150px;
+    top: 26vh;
+  }
+}
+/* 노트북 medium */
+@media screen and (min-width: 1025px) and (max-width: 1439px) {
+  /* 헤더 */
+  s #logo_search {
+    width: 900px;
+  }
+  #menu {
+    width: 900px;
+  }
+  .main_text {
+    width: 900px;
+  }
+  /* 섹션 */
+  section {
+    width: 900px;
+  }
+  .Renewal_box {
+    right: 143px;
+    top: 28.5vh;
+  }
+  /* 풋터 */
+  .footer_inner {
+    width: 900px;
+  }
+}
+/* 태블릿 */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  /* 헤더 */
+  #logo_search {
+    width: 700px;
+  }
+  #menu {
+    width: 700px;
+  }
+  .main_text {
+    width: 700px;
+  }
+  /* 섹션 */
+  section {
+    width: 700px;
+  }
+  .submenu {
+    width: 700px;
+  }
+  .book_wrap {
+    gap: 0px;
+    row-gap: 50px;
+  }
+  .book_img img {
+    width: 200px;
+    height: fit-content;
+  } /* 메뉴 */
+  .right_menu {
+    display: none;
+  }
+  .book_type2 div {
+    display: none;
+  }
+  .right_menu_Responsive {
+    display: block;
+  }
+  .right_menu_Responsive {
+    background-color: #fff;
+    width: 100%;
+    height: 64px;
+    gap: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid #ddd;
+  }
+  .container {
+    width: 310px;
+  }
+  .book_type2 {
+    flex-direction: column;
+    margin-top: 0;
+  }
+  .book_type_wrap {
+    width: 310px;
+    height: fit-content;
+    padding: 40px 60px;
+  }
+  .book {
+    width: fit-content;
+  }
+  .Renewal_box {
+    right: 115px;
+    top: 40vh;
+  }
+  /* 풋터 */
+  footer {
+    margin-top: 200px;
+  }
+  .footer_inner {
+    width: 700px;
+  }
+  .footer_right {
+    float: left;
+    text-align: left;
+    position: absolute;
+    margin-top: 60px;
+  }
+  .footer_info {
+    padding-top: 180px;
+    margin-bottom: 50px;
+  }
+  .app_wrap {
+    float: left;
+  }
+}
+/* 모바일 large */
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  /* 헤더 */
+  header {
+    width: 500px;
+  }
+  h1 img {
+    display: none;
+  }
+  #logo_search {
+    width: 400px;
+  }
+  #menu {
+    width: 400px;
+  }
+  .main_text {
+    width: 400px;
+  }
+  /* 섹션 */
+  h2 {
+    font-size: 36px;
+  }
+  section {
+    width: 400px;
+  }
+  .submenu {
+    width: 400px;
+  }
+  .book_wrap {
+    gap: 0px;
+    row-gap: 50px;
+  }
+  .book_img img {
+    width: 180px;
+    height: fit-content;
+  }
+  .book_info_wrap2 p:nth-child(1) {
+    font-size: 20px;
+  }
+  .book_info_wrap2 p:nth-child(3) {
+    font-size: 18px;
+  }
+  .Renewal_box {
+    top: 52vh;
+    right: 120px;
+  }
+  .search {
+    width: 380px;
+  }
+  .search > button {
+    background-position: -128px -39px;
+  }
+  /* 메뉴 */
+  a {
+    font-size: 14px;
+  }
+  .left_menu {
+    gap: 26px;
+  }
+  .right_menu {
+    display: none;
+  }
+  .book_type2 div {
+    display: none;
+  }
+  .right_menu_Responsive {
+    display: block;
+  }
+  .right_menu_Responsive {
+    background-color: #fff;
+    width: 100%;
+    height: 64px;
+    gap: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid #ddd;
+  }
+  .container {
+    width: 310px;
+  }
+  .book_type2 {
+    flex-direction: column;
+    margin-top: 0;
+  }
+  .book_type_wrap {
+    width: 310px;
+    height: fit-content;
+    padding: 40px 60px;
+  }
+  .book {
+    width: fit-content;
+  }
+  /* 풋터 */
+  footer {
+    margin-top: 200px;
+  }
+  .footer_inner {
+    width: 400px;
+  }
+  .footer_right {
+    float: left;
+    text-align: left;
+    position: absolute;
+    margin-top: 60px;
+  }
+  .footer_info {
+    padding-top: 180px;
+    margin-bottom: 50px;
+  }
+  .footer_inner ul {
+    flex-wrap: wrap;
+  }
+  .app_wrap {
+    float: left;
+  }
+}
+/* 모바일 */
+@media screen and (max-width: 480px) {
+  /* 헤더 */
+  header {
+    width: 500px;
+  }
+  h1 img {
+    display: none;
+  }
+  #logo_search {
+    width: 400px;
+  }
+  #menu {
+    width: 400px;
+  }
+  .main_text {
+    width: 400px;
+  }
+  /* 섹션 */
+  h2 {
+    font-size: 36px;
+  }
+  section {
+    width: 400px;
+  }
+  .submenu {
+    width: 400px;
+  }
+  .book_wrap {
+    gap: 0px;
+    row-gap: 50px;
+  }
+  .book_img img {
+    width: 180px;
+    height: fit-content;
+  }
+  .book_info_wrap2 p:nth-child(1) {
+    font-size: 20px;
+  }
+  .book_info_wrap2 p:nth-child(3) {
+    font-size: 18px;
+  }
+  .Renewal_box {
+    top: 52vh;
+    right: 120px;
+  }
+  .search {
+    width: 380px;
+  }
+  .search > button {
+    background-position: -128px -39px;
+  }
+  /* 메뉴 */
+  a {
+    font-size: 14px;
+  }
+  .left_menu {
+    gap: 26px;
+  }
+  .right_menu {
+    display: none;
+  }
+  .book_type2 div {
+    display: none;
+  }
+  .right_menu_Responsive {
+    display: block;
+  }
+  .right_menu_Responsive {
+    background-color: #fff;
+    width: 100%;
+    height: 64px;
+    gap: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid #ddd;
+  }
+  .container {
+    width: 310px;
+  }
+  .book_type2 {
+    flex-direction: column;
+    margin-top: 0;
+  }
+  .book_type_wrap {
+    width: 310px;
+    height: fit-content;
+    padding: 40px 60px;
+  }
+  .book {
+    width: fit-content;
+  }
+  /* 풋터 */
+  footer {
+    margin-top: 200px;
+  }
+  .footer_inner {
+    width: 400px;
+  }
+  .footer_right {
+    float: left;
+    text-align: left;
+    position: absolute;
+    margin-top: 60px;
+  }
+  .footer_info {
+    padding-top: 180px;
+    margin-bottom: 50px;
+  }
+  .footer_inner ul {
+    flex-wrap: wrap;
+  }
+  .app_wrap {
+    float: left;
+  }
+}

@@ -1,0 +1,76 @@
+@charset "utf-8";
+@font-face {
+  font-family: 'Pretendard-Regular';
+  src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+body {
+  width: 100%;
+  height: 100%;
+}
+.logo {
+  text-align: center;
+}
+.wrap {
+  width: 430px;
+  height: 100%;
+  margin: 100px auto;
+  display: flex;
+  justify-content: space-between;
+  flex-flow: column wrap;
+  position: relative;
+}
+.id_pw input {
+  width: 100%;
+  height: 54px;
+  padding: 0px 20px;
+  box-sizing: border-box;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+}
+input::placeholder {
+  font-family: 'Pretendard-Regular';
+  color: #999;
+  font-size: 16px;
+}
+.Self_identification {
+  font-family: 'Pretendard-Regular';
+  width: 100%;
+  height: 54px;
+  font-size: 18px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  color: #505050;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+input:last-child {
+  margin-top: 20px;
+}
+.id_pw {
+  margin-top: 70px;
+}
+.membership {
+  font-family: 'Pretendard-Regular';
+  width: 100%;
+  height: 54px;
+  font-size: 18px;
+  background-color: #516559;
+  color: #fff;
+  border-radius: 10px;
+  border: none;
+  margin-top: 20px;
+}
+.Copyright {
+  font-size: 10px;
+  color: #516559;
+  margin-top: 200px;
+  text-align: center;
+}
+.icons {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 50px;
+}

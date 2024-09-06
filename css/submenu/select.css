@@ -1,0 +1,191 @@
+main {
+  width: 100%;
+  height: fit-content;
+}
+.main_text {
+  width: 1440px;
+  height: auto;
+  margin: 0 auto;
+  padding-top: 283px;
+}
+h2 {
+  font-size: 40px;
+  font-weight: 600;
+  position: relative;
+}
+section {
+  padding-top: 50px;
+  width: 1440px;
+  height: fit-content;
+  margin: 0 auto;
+}
+.user_select {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #dddd;
+  padding-bottom: 20px;
+}
+.select_list1 {
+  width: 454px;
+  height: 294px;
+  border-radius: 20px;
+  border: 1px solid #eee;
+  align-content: center;
+  padding: 20px 50px;
+  margin-top: 60px;
+  position: relative;
+}
+.select_list2 {
+  width: 454px;
+  height: 294px;
+  border-radius: 20px;
+  border: 1px solid #eee;
+  align-content: center;
+  padding: 20px 50px;
+  margin-top: 60px;
+  position: relative;
+}
+.select_list img:first-child {
+  border: 1px solid #eee;
+}
+.txt_wrap {
+  float: right;
+  position: absolute;
+  top: 12%;
+  right: 24%;
+}
+.txt_wrap2 {
+  float: right;
+  position: absolute;
+  top: 12%;
+  left: 46%;
+}
+.txt1 {
+  font-size: 18px;
+  font-weight: 500;
+}
+.txt2 {
+  margin-top: 4px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #999;
+}
+.txt3 {
+  margin-top: 14px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #000;
+}
+.txt3 span {
+  color: #de3535;
+}
+.select_list input {
+  position: absolute;
+  left: 20px;
+}
+/* 전체 선택 */
+#chk {
+  display: none;
+}
+#chk + label {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+  background: url(../../img/check.png) no-repeat;
+  position: relative;
+  top: 2px;
+}
+#chk:checked + label {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  background: url(../../img/check2.png) no-repeat;
+  position: relative;
+  top: 2px;
+}
+/* 선택 */
+#chk1 {
+  display: none;
+}
+#chk1 + label {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+  background: url(../../img/check.png) no-repeat;
+  position: absolute;
+  left: 20px;
+}
+#chk1:checked + label {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  background: url(../../img/check2.png) no-repeat;
+  position: absolute;
+  left: 20px;
+}
+/* 선택 */
+#chk2 {
+  display: none;
+}
+#chk2 + label {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+  background: url(../../img/check.png) no-repeat;
+  position: absolute;
+  left: 20px;
+}
+#chk2:checked + label {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  background: url(../../img/check2.png) no-repeat;
+  position: absolute;
+  left: 20px;
+}
+/* 리스트 묶음 */
+.select_list_wrap {
+  display: flex;
+  gap: 32px;
+}
+/* 삭제 */
+.delete {
+  position: absolute;
+  right: 20px;
+  top: 30px;
+  width: 22px;
+  height: 22px;
+  cursor: pointer;
+}
+/* 선택 삭제 */
+.select_delete {
+  font-family: 'Pretendard-Regular';
+  border: none;
+  background: none;
+  font-size: 16px;
+  font-weight: 400;
+  color: #505050;
+  cursor: pointer;
+}
+/* 풋터 */
+footer {
+  margin-top: 100px;
+}
+/* 메세지 */
+#message {
+  display: none;
+  color: #999;
+  width: 1440px;
+  height: 200px;
+  margin: 0 auto;
+  text-align: center;
+  align-content: end;
+  margin-bottom: 180px;
+}

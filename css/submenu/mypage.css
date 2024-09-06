@@ -1,0 +1,121 @@
+main {
+  width: 100%;
+  height: fit-content;
+  position: relative;
+}
+.main_text {
+  width: 1440px;
+  height: auto;
+  margin: 0 auto;
+}
+section {
+  padding-top: 340px;
+  width: 1440px;
+  height: fit-content;
+  margin: 0 auto;
+}
+.user_info_wrap {
+  width: 100%;
+  height: fit-content;
+  display: block;
+  position: relative;
+}
+/* 프로필 */
+.profile {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+.profile img {
+  cursor: pointer;
+}
+h3 {
+  font-size: 30px;
+  font-weight: 500;
+}
+/* 정보 */
+.info {
+  width: 900px;
+  height: fit-content;
+  display: flex;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  justify-content: space-between;
+  padding: 40px 60px;
+  position: absolute;
+  right: 8.5vw;
+  top: -20px;
+  margin-bottom: 100px;
+}
+.info_title,
+.number {
+  font-size: 20px;
+  font-weight: 500;
+}
+.number {
+  margin-top: 14px;
+}
+.info div {
+  text-align: center;
+}
+.title_number_wrap {
+  cursor: pointer;
+}
+.title_number_wrap:not(.title_number_wrap:nth-child(5)) {
+  border-right: 1px solid #ddd;
+  padding-right: 60px;
+}
+.setting {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  width: fit-content;
+  justify-content: flex-end;
+  position: absolute;
+  top: 30px;
+  right: 0;
+}
+.support_and_recent {
+  width: 1440px;
+  height: fit-content;
+  display: flex;
+  margin-top: 130px;
+  justify-content: space-between;
+  margin-bottom: 100px;
+}
+.help,
+.heading {
+  font-size: 24px;
+  font-weight: 700;
+}
+.message {
+  color: #999;
+  font-weight: 500;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  align-content: center;
+}
+.help li {
+  font-size: 18px;
+  font-weight: 500;
+  display: flex;
+  margin-top: 30px;
+  cursor: pointer;
+}
+.help li:hover {
+  text-decoration: underline;
+}
+.container_box {
+  background-color: #fdfdfd;
+  border: 1px solid #ddd;
+  border-radius: 20px;
+  width: 1200px;
+  height: 420px;
+  padding: 60px 60px 110px 60px;
+}
+.number {
+  color: #000;
+}

@@ -1,0 +1,12 @@
+/* 모바일 large */
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .Copyright {
+    margin-top: 110px;
+  }
+}
+/* 모바일 */
+@media screen and (max-width: 481px) {
+  .Copyright {
+    margin-top: 110px;
+  }
+}

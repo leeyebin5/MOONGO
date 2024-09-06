@@ -1,0 +1,70 @@
+.main_title {
+  color: #516559;
+  border-bottom: 4px solid #516559;
+  padding-bottom: 24px;
+}
+main {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-color: #516559;
+}
+section {
+  width: 1440px;
+  height: 100%;
+  margin: 0 auto;
+}
+.main_text {
+  color: #fff;
+  position: absolute;
+  top: 34vh;
+}
+h2 {
+  font-size: 44px;
+  font-weight: 700;
+  line-height: 60px;
+}
+h3 {
+  font-size: 22px;
+  font-weight: 500;
+  margin-top: 50px;
+}
+h4 {
+  font-size: 16px;
+  font-weight: 400;
+  margin-top: 14px;
+}
+/* 버튼 */
+.test_start {
+  font-family: 'Pretendard-Regular';
+  background-color: transparent;
+  padding: 20px 50px;
+  font-size: 30px;
+  border-radius: 20px;
+  border: 2px solid #fff;
+  color: #fff;
+  font-weight: 700;
+  position: absolute;
+  top: 74vh;
+  cursor: pointer;
+}
+.work {
+  position: relative;
+  right: -36vw;
+  top: 41vh;
+}
+.buble1 {
+  position: absolute;
+  right: 37vh;
+  top: 46vh;
+}
+.buble2 {
+  position: absolute;
+  top: 29vh;
+  right: 23vh;
+}
+.test_start:hover {
+  transition: 0.3s;
+  color: #516559;
+  background-color: #fff;
+}

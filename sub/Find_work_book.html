@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>문제집 찾기</title>
+    <!-- css -->
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="../css/submenu/Find_workbook.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="../css/submenu/common.css" />
+    <link rel="stylesheet" href="../css/responsive/Find_work_book.css" />
+    <link rel="icon" href="../img/favicon-16x16.png" />
+  </head>
+  <body>
+    <div class="wrap">
+      <header>
+        <!-- 로고 -->
+        <div id="logo_search">
+          <h1>
+            <a href="/"><img src="../img/logo.png" alt="문고" /></a>
+          </h1>
+          <!-- 검색창 -->
+          <form action="#" method="post">
+            <div class="search">
+              <input type="search" name="search" id="search" placeholder="책 선택은 문고" autofocus />
+              <button type="submit">검색</button>
+            </div>
+          </form>
+        </div>
+        <!-- 왼쪽 메뉴 -->
+        <nav id="menu">
+          <ul class="left_menu">
+            <li>
+              <button type="button" onclick="menuClick()"></button>
+              <!-- 서브메뉴 -->
+              <div id="container" class="container">
+                <div class="book_type_wrap">
+                  <div class="book_type">
+                    <a href="#"
+                      ><span>국내도서</span>
+                      <button class="domestic_books"></button>
+                    </a>
+                    <a href="#"
+                      ><span class="foreign_books">외국도서</span>
+                      <div class="foreign_books"></div>
+                    </a>
+                  </div>
+                  <div class="book_type2">
+                    <ul>
+                      <a href="#">문학</a>
+                      <div class="li_wrap1">
+                        <li><a href="#">소설</a></li>
+                        <li><a href="#">시/에세이</a></li>
+                        <li><a href="#">만화</a></li>
+                      </div>
+                    </ul>
+                    <ul>
+                      <a href="#">인문사회</a>
+                      <div class="li_wrap2">
+                        <li><a href="#">인문</a></li>
+                        <li><a href="#">정치/사회</a></li>
+                        <li><a href="#">역사</a></li>
+                        <li><a href="#">문화</a></li>
+                        <li><a href="#">종교</a></li>
+                        <li><a href="#">예술</a></li>
+                        <li><a href="#">대중문화</a></li>
+                      </div>
+                    </ul>
+                    <ul>
+                      <a href="#">실용</a>
+                      <div class="li_wrap3">
+                        <li><a href="#">가정/육아</a></li>
+                        <li><a href="#">요리</a></li>
+                        <li><a href="#">건강</a></li>
+                        <li><a href="#">취미</a></li>
+                        <li><a href="#">실용</a></li>
+                        <li><a href="#">스포츠</a></li>
+                        <li><a href="#">자기계발</a></li>
+                        <li><a href="#">경제경영</a></li>
+                      </div>
+                    </ul>
+                    <ul>
+                      <a href="#">학습자료</a>
+                      <div class="li_wrap4">
+                        <li><a href="#">중고등 참고서</a></li>
+                        <li><a href="#">초등 참고서</a></li>
+                        <li><a href="#">유아</a></li>
+                        <li><a href="#">어린이</a></li>
+                        <li><a href="#">청소년</a></li>
+                        <li><a href="#">대학교재</a></li>
+                      </div>
+                    </ul>
+                    <ul>
+                      <a href="#">기술 및 과학</a>
+                      <div class="li_wrap5">
+                        <li><a href="#">기술 공학</a></li>
+                        <li><a href="#">과학</a></li>
+                        <li><a href="#">외국어</a></li>
+                        <li><a href="#">컴퓨터</a></li>
+                      </div>
+                    </ul>
+                    <ul>
+                      <a href="#">취업 및 여행</a>
+                      <div class="li_wrap6">
+                        <li><a href="#">여행</a></li>
+                        <li><a href="#">취업 수험서</a></li>
+                      </div>
+                    </ul>
+                    <ul>
+                      <a href="#">기타</a>
+                      <div class="li_wrap7">
+                        <li><a href="#">잡지</a></li>
+                      </div>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <!-- 왼쪽 메뉴 -->
+            </li>
+            <li><a href="./sub_rank01.html">랭킹</a></li>
+            <li><a href="./sub_new.html">신간도서</a></li>
+            <li><a href="./Find_work_book.html" class="main_title">문제집 찾기</a></li>
+            <li><a href="./Find_custom_book.html">맞춤 책 찾기</a></li>
+            <li><a href="./event01.html">이벤트</a></li>
+          </ul>
+          <!-- 오른쪽 메뉴 -->
+          <ul class="right_menu">
+            <li><a href="./login.html">로그인</a></li>
+            <li><a href="./select.html">찜</a></li>
+            <li><a href="./shopping_cart.html">장바구니</a></li>
+            <li><a href="./mypage.html">마이페이지</a></li>
+          </ul>
+        </nav>
+      </header>
+      <main>
+        <section>
+          <div class="main_text">
+            <h2>공부 시작을 위해 필요한<br />문제집 찾기 검사</h2>
+            <h3>학력과 과목 선택 후, 그에 맞는 질문을 통해 수준에 맞는 문제집을 찾아드립니다.</h3>
+            <h4>이 검사는 웹 기반 검사로 20분 정도 소요됩니다.</h4>
+          </div>
+          <button type="button" class="test_start" class="btn btn-primary btn-jelly">검사 시작</button>
+          <img src="../img/work.png" alt="일러스트" class="work" />
+          <img src="../img/buble.png" alt="일러스트" class="buble1 animate__animated animate__zoomIn" />
+          <img src="../img/buble2.png" alt="일러스트" class="buble2 animate__animated animate__zoomIn" />
+        </section>
+      </main>
+    </div>
+    <script src="../js/index.js"></script>
+  </body>
+</html>

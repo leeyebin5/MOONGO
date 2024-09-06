@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>랭킹</title>
+    <!-- css -->
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="../css/submenu/sub_rank03.css" />
+    <link rel="stylesheet" href="../css/submenu/common.css" />
+    <link rel="stylesheet" href="../css/responsive/sub_rank03.css" />
+    <link rel="icon" href="../img/favicon-16x16.png" />
+  </head>
+  <body>
+    <div class="wrap">
+      <header>
+        <!-- 로고 -->
+        <div id="logo_search">
+          <h1>
+            <a href="/"><img src="../img/logo.png" alt="문고" /></a>
+          </h1>
+          <!-- 검색창 -->
+          <form action="#" method="post">
+            <div class="search">
+              <input type="search" name="search" id="search" placeholder="책 선택은 문고" autofocus />
+              <button type="submit">검색</button>
+            </div>
+          </form>
+        </div>
+        <!-- 왼쪽 메뉴 -->
+        <nav id="menu">
+          <ul class="left_menu">
+            <li>
+              <button type="button" onclick="menuClick()"></button>
+              <!-- 서브메뉴 -->
+              <div id="container" class="container">
+                <ul class="right_menu_Responsive">
+                  <li><a href="./login.html">로그인</a></li>
+                  <li><a href="./select.html">찜</a></li>
+                  <li><a href="./shopping_cart.html">장바구니</a></li>
+                  <li><a href="./mypage.html">마이페이지</a></li>
+                </ul>
+                <div class="book_type_wrap">
+                  <div class="book_type">
+                    <a href="#"
+                      ><span>국내도서</span>
+                      <button class="domestic_books"></button>
+                    </a>
+                    <a href="#"
+                      ><span class="foreign_books">외국도서</span>
+                      <div class="foreign_books"></div>
+                    </a>
+                  </div>
+                  <div class="book_type2">
+                    <ul>
+                      <a href="#">문학</a>
+                      <div class="li_wrap1">
+                        <li><a href="#">소설</a></li>
+                        <li><a href="#">시/에세이</a></li>
+                        <li><a href="#">만화</a></li>
+                      </div>
+                    </ul>
+                    <ul>
+                      <a href="#">인문사회</a>
+                      <div class="li_wrap2">
+                        <li><a href="#">인문</a></li>
+                        <li><a href="#">정치/사회</a></li>
+                        <li><a href="#">역사</a></li>
+                        <li><a href="#">문화</a></li>
+                        <li><a href="#">종교</a></li>
+                        <li><a href="#">예술</a></li>
+                        <li><a href="#">대중문화</a></li>
+                      </div>
+                    </ul>
+                    <ul>
+                      <a href="#">실용</a>
+                      <div class="li_wrap3">
+                        <li><a href="#">가정/육아</a></li>
+                        <li><a href="#">요리</a></li>
+                        <li><a href="#">건강</a></li>
+                        <li><a href="#">취미</a></li>
+                        <li><a href="#">실용</a></li>
+                        <li><a href="#">스포츠</a></li>
+                        <li><a href="#">자기계발</a></li>
+                        <li><a href="#">경제경영</a></li>
+                      </div>
+                    </ul>
+                    <ul>
+                      <a href="#">학습자료</a>
+                      <div class="li_wrap4">
+                        <li><a href="#">중고등 참고서</a></li>
+                        <li><a href="#">초등 참고서</a></li>
+                        <li><a href="#">유아</a></li>
+                        <li><a href="#">어린이</a></li>
+                        <li><a href="#">청소년</a></li>
+                        <li><a href="#">대학교재</a></li>
+                      </div>
+                    </ul>
+                    <ul>
+                      <a href="#">기술 및 과학</a>
+                      <div class="li_wrap5">
+                        <li><a href="#">기술 공학</a></li>
+                        <li><a href="#">과학</a></li>
+                        <li><a href="#">외국어</a></li>
+                        <li><a href="#">컴퓨터</a></li>
+                      </div>
+                    </ul>
+                    <ul>
+                      <a href="#">취업 및 여행</a>
+                      <div class="li_wrap6">
+                        <li><a href="#">여행</a></li>
+                        <li><a href="#">취업 수험서</a></li>
+                      </div>
+                    </ul>
+                    <ul>
+                      <a href="#">기타</a>
+                      <div class="li_wrap7">
+                        <li><a href="#">잡지</a></li>
+                      </div>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <!-- 왼쪽 메뉴 -->
+            </li>
+            <li><a href="./sub_rank01.html" class="main_title">랭킹</a></li>
+            <li><a href="./sub_new.html">신간도서</a></li>
+            <li><a href="./Find_work_book.html">문제집 찾기</a></li>
+            <li><a href="./Find_custom_book.html">맞춤 책 찾기</a></li>
+            <li><a href="./event01.html">이벤트</a></li>
+          </ul>
+          <!-- 오른쪽 메뉴 -->
+          <ul class="right_menu">
+            <li><a href="./login.html">로그인</a></li>
+            <li><a href="./select.html">찜</a></li>
+            <li><a href="./shopping_cart.html">장바구니</a></li>
+            <li><a href="./mypage.html">마이페이지</a></li>
+          </ul>
+        </nav>
+      </header>
+      <!-- 랭킹 -->
+      <main>
+        <div class="main_text">
+          <h2>랭킹</h2>
+          <div class="main_text_wrap">
+            <div class="main_text2">
+              <a href="./sub_rank01.html">실시간 랭킹</a>
+              <a href="./sub_rank02.html">장르별</a>
+              <a href="./sub_rank03.html">연령대별</a>
+              <a href="./sub_rank04.html">문제집</a>
+            </div>
+          </div>
+          <!-- 서브메뉴 -->
+          <div class="submenu">
+            <div class="submenu_wrap">
+              <a href="#">유아</a>
+              <a href="#">어린이</a>
+              <a href="#">청소년</a>
+              <a href="#">성인</a>
+            </div>
+            <div class="Renewal_wrap">
+              <div class="Renewal_icon"></div>
+              <p class="Renewal">1시간 전 갱신</p>
+              <div class="Renewal_box">판매량, 조회수, 평점, 리뷰가 반영됐습니다.</div>
+            </div>
+          </div>
+        </div>
+        <!-- books -->
+        <section>
+          <div class="book_wrap">
+            <!-- 1st -->
+
+            <!-- book1 -->
+            <div class="book">
+              <div class="book_info_wrap">
+                <div class="ranking_wrap">
+                  <h3 class="ranking_1">1</h3>
+                  <p class="changes_up">2</p>
+                </div>
+                <div class="book_info">
+                  <p>127권 구매중</p>
+                  <div class="heart_icon"><img src="../img/heart/heart_0.png" alt="찜" /></div>
+                </div>
+              </div>
+              <div class="book_img">
+                <a href="#"><img src="../img/books/book1.jpg" alt="책" width="228px" height="364px" /></a>
+              </div>
+              <div class="book_info_wrap2">
+                <p>상위1퍼 부자되는 법칙</p>
+                <p>가나다 · 마바사</p>
+                <p><span class="Discount">10% </span>8,000원</p>
+                <div class="gpa_wrap">
+                  <div class="star"></div>
+                  <p>4.78<span class="review"> (7,180)</span></p>
+                </div>
+              </div>
+            </div>
+            <!-- book2 -->
+            <div class="book">
+              <div class="book_info_wrap">
+                <div class="ranking_wrap">
+                  <h3 class="ranking_2">2</h3>
+                  <p class="changes_up">1</p>
+                </div>
+                <div class="book_info">
+                  <p>109권 구매중</p>
+                  <div class="heart_icon"><img src="../img/heart/heart_0.png" alt="찜" /></div>
+                </div>
+              </div>
+              <div class="book_img">
+                <a href="#"><img src="../img/books/book5.jpg" alt="책" width="228px" height="364px" /></a>
+              </div>
+              <div class="book_info_wrap2">
+                <p>상위1퍼 부자되는 법칙</p>
+                <p>가나다 · 마바사</p>
+                <p><span class="Discount">10% </span>8,000원</p>
+                <div class="gpa_wrap">
+                  <div class="star"></div>
+                  <p>4.78<span class="review"> (7,180)</span></p>
+                </div>
+              </div>
+            </div>
+            <!-- book3 -->
+            <div class="book">
+              <div class="book_info_wrap">
+                <div class="ranking_wrap">
+                  <h3 class="ranking_3">3</h3>
+                </div>
+                <div class="book_info">
+                  <p>94권 구매중</p>
+                  <div class="heart_icon"><img src="../img/heart/heart_0.png" alt="찜" /></div>
+                </div>
+              </div>
+              <div class="book_img">
+                <a href="#"><img src="../img/books/book7.jpg" alt="책" width="228px" height="364px" /></a>
+              </div>
+              <div class="book_info_wrap2">
+                <p>상위1퍼 부자되는 법칙</p>
+                <p>가나다 · 마바사</p>
+                <p><span class="Discount">10% </span>8,000원</p>
+                <div class="gpa_wrap">
+                  <div class="star"></div>
+                  <p>4.78<span class="review"> (7,180)</span></p>
+                </div>
+              </div>
+            </div>
+            <!-- book4 -->
+            <div class="book">
+              <div class="book_info_wrap">
+                <div class="ranking_wrap">
+                  <h3 class="ranking_4">4</h3>
+                  <p class="changes_up">1</p>
+                </div>
+                <div class="book_info">
+                  <p>102권 구매중</p>
+                  <div class="heart_icon"><img src="../img/heart/heart_0.png" alt="찜" /></div>
+                </div>
+              </div>
+              <div class="book_img">
+                <a href="#"><img src="../img/books/book6.jpg" alt="책" width="228px" height="364px" /></a>
+              </div>
+              <div class="book_info_wrap2">
+                <p>상위1퍼 부자되는 법칙</p>
+                <p>가나다 · 마바사</p>
+                <p><span class="Discount">10% </span>8,000원</p>
+                <div class="gpa_wrap">
+                  <div class="star"></div>
+                  <p>4.78<span class="review"> (7,180)</span></p>
+                </div>
+              </div>
+            </div>
+            <!-- book5 -->
+            <div class="book">
+              <div class="book_info_wrap">
+                <div class="ranking_wrap">
+                  <h3 class="ranking_5">5</h3>
+                  <p class="changes_down">1</p>
+                </div>
+                <div class="book_info">
+                  <p>88권 구매중</p>
+                  <div class="heart_icon"><img src="../img/heart/heart_0.png" alt="찜" /></div>
+                </div>
+              </div>
+              <div class="book_img">
+                <a href="#"><img src="../img/books/book3.jpg" alt="책" width="228px" height="364px" /></a>
+              </div>
+              <div class="book_info_wrap2">
+                <p>상위1퍼 부자되는 법칙</p>
+                <p>가나다 · 마바사</p>
+                <p><span class="Discount">10% </span>8,000원</p>
+                <div class="gpa_wrap">
+                  <div class="star"></div>
+                  <p>4.78<span class="review"> (7,180)</span></p>
+                </div>
+              </div>
+            </div>
+
+            <!-- 2st -->
+
+            <!-- book6 -->
+            <div class="book">
+              <div class="book_info_wrap">
+                <div class="ranking_wrap">
+                  <h3 class="ranking_6">6</h3>
+                  <p class="changes_down">2</p>
+                </div>
+                <div class="book_info">
+                  <p>127권 구매중</p>
+                  <div class="heart_icon"><img src="../img/heart/heart_0.png" alt="찜" /></div>
+                </div>
+              </div>
+              <div class="book_img">
+                <a href="#"><img src="../img/books/book2.jpg" alt="책" width="228px" height="364px" /></a>
+              </div>
+              <div class="book_info_wrap2">
+                <p>상위1퍼 부자되는 법칙</p>
+                <p>가나다 · 마바사</p>
+                <p><span class="Discount">10% </span>8,000원</p>
+                <div class="gpa_wrap">
+                  <div class="star"></div>
+                  <p>4.78<span class="review"> (7,180)</span></p>
+                </div>
+              </div>
+            </div>
+            <!-- book7 -->
+            <div class="book">
+              <div class="book_info_wrap">
+                <div class="ranking_wrap">
+                  <h3 class="ranking_7">7</h3>
+                  <p class="changes_down">1</p>
+                </div>
+                <div class="book_info">
+                  <p>109권 구매중</p>
+                  <div class="heart_icon"><img src="../img/heart/heart_0.png" alt="찜" /></div>
+                </div>
+              </div>
+              <div class="book_img">
+                <a href="#"><img src="../img/books/book4.jpg" alt="책" width="228px" height="364px" /></a>
+              </div>
+              <div class="book_info_wrap2">
+                <p>상위1퍼 부자되는 법칙</p>
+                <p>가나다 · 마바사</p>
+                <p><span class="Discount">10% </span>8,000원</p>
+                <div class="gpa_wrap">
+                  <div class="star"></div>
+                  <p>4.78<span class="review"> (7,180)</span></p>
+                </div>
+              </div>
+            </div>
+            <!-- book8 -->
+            <div class="book">
+              <div class="book_info_wrap">
+                <div class="ranking_wrap">
+                  <h3 class="ranking_8">8</h3>
+                  <p class="changes_up">1</p>
+                </div>
+                <div class="book_info">
+                  <p>94권 구매중</p>
+                  <div class="heart_icon"><img src="../img/heart/heart_0.png" alt="찜" /></div>
+                </div>
+              </div>
+              <div class="book_img">
+                <a href="#"><img src="../img/books/book8.jpg" alt="책" width="228px" height="364px" /></a>
+              </div>
+              <div class="book_info_wrap2">
+                <p>상위1퍼 부자되는 법칙</p>
+                <p>가나다 · 마바사</p>
+                <p><span class="Discount">10% </span>8,000원</p>
+                <div class="gpa_wrap">
+                  <div class="star"></div>
+                  <p>4.78<span class="review"> (7,180)</span></p>
+                </div>
+              </div>
+            </div>
+            <!-- book9 -->
+            <div class="book">
+              <div class="book_info_wrap">
+                <div class="ranking_wrap">
+                  <h3 class="ranking_9">9</h3>
+                  <p class="changes_up">1</p>
+                </div>
+                <div class="book_info">
+                  <p>102권 구매중</p>
+                  <div class="heart_icon"><img src="../img/heart/heart_0.png" alt="찜" /></div>
+                </div>
+              </div>
+              <div class="book_img">
+                <a href="#"><img src="../img/books/book9.jpg" alt="책" width="228px" height="364px" /></a>
+              </div>
+              <div class="book_info_wrap2">
+                <p>상위1퍼 부자되는 법칙</p>
+                <p>가나다 · 마바사</p>
+                <p><span class="Discount">10% </span>8,000원</p>
+                <div class="gpa_wrap">
+                  <div class="star"></div>
+                  <p>4.78<span class="review"> (7,180)</span></p>
+                </div>
+              </div>
+            </div>
+            <!-- book10 -->
+            <div class="book">
+              <div class="book_info_wrap">
+                <div class="ranking_wrap">
+                  <h3 class="ranking_10">10</h3>
+                </div>
+                <div class="book_info">
+                  <p>88권 구매중</p>
+                  <div class="heart_icon"><img src="../img/heart/heart_0.png" alt="찜" /></div>
+                </div>
+              </div>
+              <div class="book_img">
+                <a href="#"><img src="../img/books/book10.jpg" alt="책" width="228px" height="364px" /></a>
+              </div>
+              <div class="book_info_wrap2">
+                <p>상위1퍼 부자되는 법칙</p>
+                <p>가나다 · 마바사</p>
+                <p><span class="Discount">10% </span>8,000원</p>
+                <div class="gpa_wrap">
+                  <div class="star"></div>
+                  <p>4.78<span class="review"> (7,180)</span></p>
+                </div>
+              </div>
+            </div>
+
+            <!-- 3st -->
+
+            <!-- book11 -->
+            <div class="book">
+              <div class="book_info_wrap">
+                <div class="ranking_wrap">
+                  <h3 class="ranking_11">11</h3>
+                </div>
+                <div class="book_info">
+                  <p>127권 구매중</p>
+                  <div class="heart_icon"><img src="../img/heart/heart_0.png" alt="찜" /></div>
+                </div>
+              </div>
+              <div class="book_img">
+                <a href="#"><img src="../img/books/book11.png" alt="책" width="228px" height="364px" /></a>
+              </div>
+              <div class="book_info_wrap2">
+                <p>상위1퍼 부자되는 법칙</p>
+                <p>가나다 · 마바사</p>
+                <p><span class="Discount">10% </span>8,000원</p>
+                <div class="gpa_wrap">
+                  <div class="star"></div>
+                  <p>4.78<span class="review"> (7,180)</span></p>
+                </div>
+              </div>
+            </div>
+            <!-- book12 -->
+            <div class="book">
+              <div class="book_info_wrap">
+                <div class="ranking_wrap">
+                  <h3 class="ranking_12">12</h3>
+                  <p class="changes_up">5</p>
+                </div>
+                <div class="book_info">
+                  <p>109권 구매중</p>
+                  <div class="heart_icon"><img src="../img/heart/heart_0.png" alt="찜" /></div>
+                </div>
+              </div>
+              <div class="book_img">
+                <a href="#"><img src="../img/books/book12.jpg" alt="책" width="228px" height="364px" /></a>
+              </div>
+              <div class="book_info_wrap2">
+                <p>상위1퍼 부자되는 법칙</p>
+                <p>가나다 · 마바사</p>
+                <p><span class="Discount">10% </span>8,000원</p>
+                <div class="gpa_wrap">
+                  <div class="star"></div>
+                  <p>4.78<span class="review"> (7,180)</span></p>
+                </div>
+              </div>
+            </div>
+            <!-- book13 -->
+            <div class="book">
+              <div class="book_info_wrap">
+                <div class="ranking_wrap">
+                  <h3 class="ranking_13">13</h3>
+                </div>
+                <div class="book_info">
+                  <p>94권 구매중</p>
+                  <div class="heart_icon"><img src="../img/heart/heart_0.png" alt="찜" /></div>
+                </div>
+              </div>
+              <div class="book_img">
+                <a href="#"><img src="../img/books/book13.png" alt="책" width="228px" height="364px" /></a>
+              </div>
+              <div class="book_info_wrap2">
+                <p>상위1퍼 부자되는 법칙</p>
+                <p>가나다 · 마바사</p>
+                <p><span class="Discount">10% </span>8,000원</p>
+                <div class="gpa_wrap">
+                  <div class="star"></div>
+                  <p>4.78<span class="review"> (7,180)</span></p>
+                </div>
+              </div>
+            </div>
+            <!-- book14 -->
+            <div class="book">
+              <div class="book_info_wrap">
+                <div class="ranking_wrap">
+                  <h3 class="ranking_14">14</h3>
+                </div>
+                <div class="book_info">
+                  <p>102권 구매중</p>
+                  <div class="heart_icon"><img src="../img/heart/heart_0.png" alt="찜" /></div>
+                </div>
+              </div>
+              <div class="book_img">
+                <a href="#"><img src="../img/books/book14.jpg" alt="책" width="228px" height="364px" /></a>
+              </div>
+              <div class="book_info_wrap2">
+                <p>상위1퍼 부자되는 법칙</p>
+                <p>가나다 · 마바사</p>
+                <p><span class="Discount">10% </span>8,000원</p>
+                <div class="gpa_wrap">
+                  <div class="star"></div>
+                  <p>4.78<span class="review"> (7,180)</span></p>
+                </div>
+              </div>
+            </div>
+            <!-- book15 -->
+            <div class="book">
+              <div class="book_info_wrap">
+                <div class="ranking_wrap">
+                  <h3 class="ranking_15">15</h3>
+                </div>
+                <div class="book_info">
+                  <p>88권 구매중</p>
+                  <div class="heart_icon"><img src="../img/heart/heart_0.png" alt="찜" /></div>
+                </div>
+              </div>
+              <div class="book_img">
+                <a href="#"><img src="../img/books/book15.jpg" alt="책" width="228px" height="364px" /></a>
+              </div>
+              <div class="book_info_wrap2">
+                <p>상위1퍼 부자되는 법칙</p>
+                <p>가나다 · 마바사</p>
+                <p><span class="Discount">10% </span>8,000원</p>
+                <div class="gpa_wrap">
+                  <div class="star"></div>
+                  <p>4.78<span class="review"> (7,180)</span></p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="button_wrap">
+            <button type="button" class="preve"></button>
+            <button type="button">1</button>
+            <button type="button">2</button>
+            <p>...</p>
+            <button type="button">7</button>
+            <button type="button" class="next"></button>
+          </div>
+        </section>
+      </main>
+      <!-- 풋터 -->
+      <footer>
+        <div class="footer_inner">
+          <div class="footer_left">
+            <a href="#"><img src="../img/logo.png" alt="문고" /></a>
+            <div class="footer_info">
+              <ul>
+                <li><a href="#" target="_blank">회사소개</a></li>
+                <li><a href="#">이용약관</a></li>
+                <li><a href="#">개인정보처리방침</a></li>
+                <li><a href="#">청소년보호정책</a></li>
+                <li><a href="#">대량주문안내</a></li>
+                <li><a href="#">교환 및 환불 안내</a></li>
+              </ul>
+              <p class="copyright">Copyright &copy; 2024 moongo All Rights Reserved.</p>
+            </div>
+          </div>
+          <div class="footer_right">
+            <p>고객센터 이용안내</p>
+            <p>1588-1234</p>
+            <p>(09:30 ~ 18:00, 주말/공휴일 휴무)</p>
+            <div class="app_wrap">
+              <a href="#"><div class="instagram"></div></a>
+              <a href="#"><div class="kakaotalk"></div></a>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script src="../js/index.js"></script>
+  </body>
+</html>
