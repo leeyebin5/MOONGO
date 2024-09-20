@@ -364,3 +364,11 @@ footer {
 .footer_info {
   padding-top: 50px;
 }
+/* 추가 */
+.heart_icon:hover img,
+.book_info_wrap2 p:nth-child(1) {
+  cursor: pointer;
+}
+.book_info_wrap2 p:nth-child(1) {
+  line-height: 28px;
+}
